@@ -1,0 +1,24 @@
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.vbprojResolveAssemblyReference.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.vbproj.GenerateResource.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.vbproj.CoreCompileInputs.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug\FileCompare.exe.config
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug\FileCompare.exe
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug\FileCompare.pdb
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug\FileCompare.xml
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.exe
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.xml
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\obj\Debug\FileCompare.pdb
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\bin\Debug\FileCompare.exe.config
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\bin\Debug\FileCompare.exe
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\bin\Debug\FileCompare.pdb
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\bin\Debug\FileCompare.xml
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.vbprojResolveAssemblyReference.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.vbproj.GenerateResource.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.vbproj.CoreCompileInputs.cache
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.exe
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.xml
+C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\FileCompare\obj\Debug\FileCompare.pdb

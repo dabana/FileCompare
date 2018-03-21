@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:HeaderFooterSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=C9973DA951AE6202C9B348379A1BE49D" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/67b74b86-a273-4ad7-9ed5-0f97276412eaCombined.css,0:HeaderFooterSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/StandardDevCenter/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=F576C687BC536B84D6E5B3246EE39B49" xmlns="http://www.w3.org/1999/xhtml" />
+<link type="text/css" rel="stylesheet" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Create a Dynamic DataGridView from any text file (optional first row as headers)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>Create a Dynamic DataGridView from any text file (optional first row as headers)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Visual Basic .NET
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Controls, DataGrid, Dynamic Controls, Visual Basic .NET, Data, CreateFile, WriteFile, ReadFile, GridView, DataGridView, How to, Files, Windows Forms Controls, Language Samples, DataGridTextCol<wbr />umn
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Desktop, Data
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">9/5/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/Create-a-Dynamic-f779794b">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1>Introduction</h1>
+<p>In this program:</p>
+<ul>
+<li>It creates a dynamic datagrid </li><li>It creates headers dynamically </li><li>Opens a file and reads it line by line </li><li>It fills the datagrid dynamically according to the text file you use </li><li>You can set any separator you like for the text files to split into columns </li><li>It skips empty lines </li><li>This sample also works if you have less or more data than your column header </li></ul>
+<p><em>With this program you can open any .txt or .csv file with any divider and place it into a dynamicaly added datagridview</em></p>
+<p><em>The Datagridview is completly created at runtime! It does not matter how many columns or lines your text file has, it is all dynamicaly adjusted!</em></p>
+<p><em>The program itself is less than&nbsp;75 lines so very easy to ajust to your own purpose&nbsp;</em></p>
+<p><em>The datagridview is added at runtime and columns are dynamicaly placed according to the number of columns you have in your txt files you can easely change the seperator e.g. to &quot;;&quot;, &quot;^,^&quot; or whatever you like</em></p>
+<p><em>Improved version first checks the number of columns if there are no headers. If you use the first row as columns it already worked that way. Also another improvement, The program skips empty lines so no error occures when you have an extra return at
+ the end</em></p>
+<p><span style="color:#ff0000; font-size:small"><em>If you like the program please rate it</em></span></p>
+<h1><span>Building the Sample</span></h1>
+<p><em>You do not need any extra's for this sample, just download and run</em></p>
+<p><em>The sample creates a text file &quot;;&quot; seperated if none exist</em></p>
+<p><em>If you have your own text file or csv file, you can just adjust the path for the variable &quot;FILE_NAME&quot;
+</em></p>
+<p><em>If your text file containes less headers than data columns an error will be displayed at lblerror.text. To see the full error just check the debug window</em></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p><em>With this program you can open any .txt or .csv file with any divider and place it into a dynamicaly added datagridview</em></p>
+<p><em>The program itself is less than&nbsp;75 lines so very easy to ajust to your own purpose&nbsp;</em></p>
+<p><em>The datagridview is added at runtime and columns are dynamicaly placed according to the number of columns you have in your txt files you can easely change the seperator e.g. to &quot;;&quot;, &quot;^,^&quot; or whatever you like</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;Thje choices you can make:</em></p>
+<p>&nbsp;<img id="93294" src="description/text to datagrid image 1.png" alt="" width="595" height="95"></p>
+<p>The sample view</p>
+<div class="scriptcode">
+<div class="pluginEditHolder" pluginCommand="mceScriptCode">
+<div class="preview"><img id="93295" src="description/text to datagrid image 2.png" alt="" width="1033" height="582"></div>
+</div>
+</div>
+<h1><span>Source Code Files</span></h1>
+<ul>
+<li><em>CSV Read to Gridview sample</em>&nbsp; - Creates a gridview from any text file
+</li></ul>
+<h1>More Information</h1>
+<p><em>For more information Please reply to this message</em></p>
+
+</div>
+
+
+    </div>
+</body>
+</html>

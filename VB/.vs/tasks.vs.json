@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-FileCompare",
+      "appliesTo": "FileCompare/",
+      "type": "launch"
+    }
+  ]
+}
