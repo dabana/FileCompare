@@ -5,6 +5,7 @@ Public Class Form1
     'Create a new datagrid
     Dim WithEvents DataGrid1 As New DataGridView()
     Dim WithEvents DataGrid2 As New DataGridView()
+    Dim path As String = My.Application.Info.DirectoryPath
 
     Private FILE_NAME As String
     Private FILE_NAME_REF As String
@@ -139,7 +140,7 @@ Public Class Form1
     Private Sub BtnLoadRef_Click(sender As Object, e As EventArgs) Handles BtnLoadRef.Click
         Dim fd As OpenFileDialog = New OpenFileDialog()
         fd.Title = "Open File Dialog"
-        fd.InitialDirectory = "C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug"
+        fd.InitialDirectory = path
         fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
         fd.FilterIndex = 2
         fd.RestoreDirectory = True
@@ -193,7 +194,7 @@ Public Class Form1
     Private Sub BtnLoadFile_Click(sender As Object, e As EventArgs) Handles BtnLoadFile.Click
         Dim fd As OpenFileDialog = New OpenFileDialog()
         fd.Title = "Open File Dialog"
-        fd.InitialDirectory = "C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug"
+        fd.InitialDirectory = path
         fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
         fd.FilterIndex = 2
         fd.RestoreDirectory = True
@@ -219,7 +220,7 @@ Public Class Form1
         Dim fd As SaveFileDialog = New SaveFileDialog()
         fd.FileName = FILE_NAME & ".txt"
         fd.Title = "Open File Dialog"
-        fd.InitialDirectory = "C:\Users\david\Documents\Visual Studio 2017\Code Snippets\Visual Basic\DynamicDataGridView\VB\CSV Read to GridView sample\bin\Debug"
+        fd.InitialDirectory = path
         fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
         fd.FilterIndex = 2
         fd.RestoreDirectory = True
